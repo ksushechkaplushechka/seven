@@ -24,11 +24,8 @@
     </Window.Resources>
     <Grid>
         <Grid Background="#2E2E3E" Height="60" VerticalAlignment="Top">
-            <TextBlock Text="Счета" VerticalAlignment="Center" HorizontalAlignment="Left"
-                       Margin="20,0,0,0" FontSize="20" Foreground="#FFFFFF" FontWeight="Bold"/>
-            <Button Content="X" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Center"
-                    Background="Transparent" Foreground="#E74C3C" BorderBrush="Transparent" FontWeight="Bold"
-                    Click="CloseButton_Click" />
+            <TextBlock Text="Счета" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0" FontSize="20" Foreground="#FFFFFF" FontWeight="Bold"/>
+            <Button Content="X" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Center" Background="Transparent" Foreground="#E74C3C" BorderBrush="Transparent" FontWeight="Bold" Click="CloseButton_Click" />
         </Grid>
         <Border Background="#2E2E3E" CornerRadius="10" Margin="20,86,20,130" Padding="10">
             <DataGrid x:Name="AccountDataGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
