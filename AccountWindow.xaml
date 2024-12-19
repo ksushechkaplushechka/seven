@@ -4,7 +4,6 @@
         Title="Account Management" Height="600" Width="800"
         Background="#1E1E2E" ResizeMode="NoResize" WindowStyle="None">
     <Window.Resources>
-        <!-- Стиль кнопки с закругленными углами -->
         <Style x:Key="RoundedButtonStyle" TargetType="Button">
             <Setter Property="Template">
                 <Setter.Value>
@@ -23,9 +22,7 @@
             <Setter Property="FontWeight" Value="Bold"/>
         </Style>
     </Window.Resources>
-
     <Grid>
-        <!-- Header -->
         <Grid Background="#2E2E3E" Height="60" VerticalAlignment="Top">
             <TextBlock Text="Счета" VerticalAlignment="Center" HorizontalAlignment="Left"
                        Margin="20,0,0,0" FontSize="20" Foreground="#FFFFFF" FontWeight="Bold"/>
@@ -33,15 +30,12 @@
                     Background="Transparent" Foreground="#E74C3C" BorderBrush="Transparent" FontWeight="Bold"
                     Click="CloseButton_Click" />
         </Grid>
-
-        <!-- Modern Styled Data Grid -->
         <Border Background="#2E2E3E" CornerRadius="10" Margin="20,86,20,130" Padding="10">
             <DataGrid x:Name="AccountDataGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
                       AutoGenerateColumns="True" 
                       Background="Transparent" Foreground="White"
                       RowBackground="#1F2933" AlternatingRowBackground="#2C3845"
                       BorderBrush="Transparent" GridLinesVisibility="None">
-                <!-- Column Headers -->
                 <DataGrid.ColumnHeaderStyle>
                     <Style TargetType="DataGridColumnHeader">
                         <Setter Property="Background">
@@ -60,8 +54,6 @@
                         <Setter Property="BorderBrush" Value="Transparent"/>
                     </Style>
                 </DataGrid.ColumnHeaderStyle>
-
-                <!-- Row Style -->
                 <DataGrid.RowStyle>
                     <Style TargetType="DataGridRow">
                         <Setter Property="FontSize" Value="14"/>
@@ -73,8 +65,6 @@
                 </DataGrid.RowStyle>
             </DataGrid>
         </Border>
-
-        <!-- Control Buttons -->
         <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,30">
             <Button x:Name="AddAccountButton" Content="Добавить" Style="{StaticResource RoundedButtonStyle}" Click="AddAccountButton_Click" Margin="5" Width="120" Height="40"
                     Background="#4CAF50" BorderBrush="#4CAF50"/>
@@ -87,8 +77,6 @@
             <Button x:Name="ViewFinesButton" Content="Штрафы" Style="{StaticResource RoundedButtonStyle}" Click="ViewFinesButton_Click" Margin="5" Width="120" Height="40"
                     Background="#4CAF50" BorderBrush="#4CAF50"/>
         </WrapPanel>
-
-        <!-- Footer -->
         <TextBlock Text="© 2024 CarSharing Inc. Все права защищены." HorizontalAlignment="Center"
                    VerticalAlignment="Bottom" Margin="0,0,0,10" Foreground="#555566" FontSize="12" />
     </Grid>
