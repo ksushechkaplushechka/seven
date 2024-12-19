@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Autobike.AccountWindow" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAQAAAAAAAAAAAAAAAAEAAAAAAABAgAAgCAA=</HashCode>
+      <FileName>AccountWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Autobike.AuthService">
+    <Position X="9.5" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAIACIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AuthService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Autobike.BookingChartWindow" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BookingChartWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Autobike.BookingWindow" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AABAABAAEQABAAAAAAgAAAAAAAAAAAAAAAAAAAAKAAA=</HashCode>
+      <FileName>BookingWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Autobike.CarBrandWindow" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAABAQAAAAAAAICAAAgAAAAAAAEEAAAIAAA=</HashCode>
+      <FileName>Car_Brand.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Autobike.CarWindow" BaseTypeListCollapsed="true">
+    <Position X="9" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAABAAAAAhAAAAAAIAABAAAAAAAAAAAAAAAABCAAA=</HashCode>
+      <FileName>CarWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Autobike.ClientAccountWindow" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAABAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>ClientAccountWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Autobike.ClientWindow" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="2.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAhAIAAAAgQAAAAAAAAAAAAAAAAAABACAAABBAAA=</HashCode>
+      <FileName>ClientWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Autobike.DepartmentWindow" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAABAAAgAAABABAAAAACAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>DepartmentWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Autobike.EmployeeWindow" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="10" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEBAAAAAAAAEAAAAAAAADIAACAAAAAAAAAIAAgAA=</HashCode>
+      <FileName>EmployeeWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Autobike.FineWindow" BaseTypeListCollapsed="true">
+    <Position X="9" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAACBAACAABAAAAAAAAAAAAIAAEAAAIAAAAAAAACAA=</HashCode>
+      <FileName>FineWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Autobike.InsuranceWindow" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>CABAABAAAAQBAAAAAAAEAAAAAIAAAAAACAAAAAACIAA=</HashCode>
+      <FileName>InsuranceWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Autobike.MaintenanceWindow" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="5.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAABIAAAABACAAAAAAAAAAAAAAAAAAAAAAAQACAiA=</HashCode>
+      <FileName>MaintenanceWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Autobike.TariffWindow" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="9.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IACAABAAAAABAAAEAAAAABAAAAAAAAACAAAAAAAIAAA=</HashCode>
+      <FileName>TariffWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="System.Windows.Window" Collapsed="true">
+    <Position X="9.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

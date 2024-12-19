@@ -1,0 +1,69 @@
+﻿<Window x:Class="Autobike.UserMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="UserMain" Height="600" Width="600"
+        Background="#1E1E2E" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <!-- Header -->
+        <Grid Background="#2E2E3E" Height="60" VerticalAlignment="Top">
+            <TextBlock Text="Добро пожаловать!" VerticalAlignment="Center" HorizontalAlignment="Left"
+                       Margin="20,0,0,0" FontSize="20" Foreground="#FFFFFF" FontWeight="Bold"/>
+            <Button Content="X" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Center"
+                    Background="Transparent" Foreground="#E74C3C" BorderBrush="Transparent" FontWeight="Bold"
+                    Click="CloseButton_Click" />
+        </Grid>
+
+        <!-- User Info Panel -->
+        <Border Background="#2E2E3E" CornerRadius="10" Margin="20,86,20,414" Height="100">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10">
+                <Ellipse Width="60" Height="60" Fill="#4CAF50" Margin="0,0,10,0"/>
+                <StackPanel Height="27">
+                    <TextBlock Text="Статус: Активен" FontSize="14" Foreground="#AAAAAA"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <!-- Buttons Section -->
+        <WrapPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,200,0,0">
+            <!-- Account Card -->
+            <Border Background="#4CAF50" CornerRadius="10" Width="200" Height="150" Margin="10"
+                    MouseDown="AccountButton_Click">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Image Source="Assets/account_icon.png" Width="50" Height="50" Margin="0,10"/>
+                    <TextBlock Text="Счета" FontSize="16" Foreground="#FFFFFF" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Booking Card -->
+            <Border Background="#4CAF50" CornerRadius="10" Width="200" Height="150" Margin="10"
+                    MouseDown="BookingButton_Click">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Image Source="Assets/booking_icon.png" Width="50" Height="50" Margin="0,10"/>
+                    <TextBlock Text="Аренда" FontSize="16" Foreground="#FFFFFF" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Personal Account Card -->
+            <Border Background="#4CAF50" CornerRadius="10" Width="200" Height="150" Margin="10"
+                    MouseDown="PersonalAccountButton_Click">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Image Source="Assets/user_icon.png" Width="50" Height="50" Margin="0,10"/>
+                    <TextBlock Text="Личный аккаунт" FontSize="16" Foreground="#FFFFFF" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Exit Card -->
+            <Border Background="#E74C3C" CornerRadius="10" Width="200" Height="150" Margin="10"
+                    MouseDown="ExitButton_Click">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Image Source="Assets/logout_icon.png" Width="50" Height="50" Margin="0,10"/>
+                    <TextBlock Text="Выход" FontSize="16" Foreground="#FFFFFF" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+        </WrapPanel>
+
+        <!-- Footer -->
+        <TextBlock Text="© 2024 CarSharing Inc. Все права защищены." HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom" Margin="0,0,0,10" Foreground="#555566" FontSize="12" />
+    </Grid>
+</Window>

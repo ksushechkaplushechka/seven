@@ -1,0 +1,78 @@
+﻿<Window x:Class="Autobike.EmployeeMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="EmployeeMain" Height="700" Width="600"
+        Background="#1E1E2E" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <!-- Header -->
+        <Grid Background="#2E2E3E" Height="60" VerticalAlignment="Top">
+            <TextBlock Text="Меню сотрудника" VerticalAlignment="Center" HorizontalAlignment="Left"
+                       Margin="20,0,0,0" FontSize="20" Foreground="#FFFFFF" FontWeight="Bold"/>
+            <Button Content="X" Width="30" Height="30" HorizontalAlignment="Right" VerticalAlignment="Center"
+                    Background="Transparent" Foreground="#E74C3C" BorderBrush="Transparent" FontWeight="Bold"
+                    Click="CloseButton_Click" />
+        </Grid>
+
+        <!-- Employee Info Panel -->
+        <Border Background="#2E2E3E" CornerRadius="10" Margin="20,65,20,535" Height="100">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10">
+                <Ellipse Width="60" Height="60" Fill="#4CAF50" Margin="0,0,10,0"/>
+                <StackPanel Height="26">
+                    <TextBlock Text="Роль: Сотрудник" FontSize="14" Foreground="#AAAAAA"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <!-- Buttons Section -->
+        <WrapPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Height="530" Width="456" Margin="0,170,0,0">
+            <!-- Car Brands Card -->
+            <Border Background="#4CAF50" CornerRadius="10" Width="200" Height="150" Margin="10"
+                    MouseDown="CarBrandButton_Click">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Image Source="Assets/brand_icon.png" Width="50" Height="50" Margin="0,10"/>
+                    <TextBlock Text="Марки" FontSize="16" Foreground="#FFFFFF" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Cars Card -->
+            <Border Background="#4CAF50" CornerRadius="10" Width="200" Height="150" Margin="10"
+                    MouseDown="CarsButton_Click">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Image Source="Assets/car_icon.png" Width="50" Height="50" Margin="0,10"/>
+                    <TextBlock Text="Машины" FontSize="16" Foreground="#FFFFFF" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Maintenance Card -->
+            <Border Background="#4CAF50" CornerRadius="10" Width="200" Height="150" Margin="10"
+                    MouseDown="MaintenceButton_Click">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Image Source="Assets/maintenance_icon.png" Width="50" Height="50" Margin="0,10"/>
+                    <TextBlock Text="Обслуживание" FontSize="16" Foreground="#FFFFFF" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Insurance Card -->
+            <Border Background="#4CAF50" CornerRadius="10" Width="200" Height="150" Margin="10"
+                    MouseDown="InsurenceButton_Click">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Image Source="Assets/insurance_icon.png" Width="50" Height="50" Margin="0,10"/>
+                    <TextBlock Text="Страховка" FontSize="16" Foreground="#FFFFFF" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Exit Card -->
+            <Border Background="#E74C3C" CornerRadius="10" Width="200" Height="150" Margin="10"
+                    MouseDown="ExitButton_Click">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Image Source="Assets/logout_icon.png" Width="50" Height="50" Margin="0,10"/>
+                    <TextBlock Text="Выход" FontSize="16" Foreground="#FFFFFF" FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+        </WrapPanel>
+
+        <!-- Footer -->
+        <TextBlock Text="© 2024 CarSharing Inc. Все права защищены." HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom" Margin="0,0,0,10" Foreground="#555566" FontSize="12" />
+    </Grid>
+</Window>
